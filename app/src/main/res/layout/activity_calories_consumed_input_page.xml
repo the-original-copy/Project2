@@ -1,0 +1,217 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#EFEFEF"
+    tools:context=".activities.CaloriesConsumedInputPage">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_calorie_input"
+        android:layout_width="match_parent"
+        android:background="@color/teal_700"
+        android:layout_height="?attr/actionBarSize">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="Calorie Input"
+            android:textColor="@color/white"
+            android:textSize="@dimen/toolbar_title_text_size"
+            android:textStyle="bold" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EFEFEF"
+        android:layout_below="@id/toolbar_calorie_input"
+        android:orientation="vertical"
+        android:padding="16dp">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/mealDescription"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:maxHeight="50dp"
+        android:layout_marginStart="@dimen/card_view_marginStartEnd"
+        android:layout_marginEnd="@dimen/card_view_marginStartEnd"
+        android:layout_weight="0.1"
+        android:background="@android:color/white"
+        app:cardCornerRadius="@dimen/card_view_corner_radius"
+        app:cardElevation="@dimen/card_view_elevation">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/card_view_content_padding">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:textColor="@color/primary_text_color"
+                    android:textSize="@dimen/label_text_size"
+                    android:textStyle="bold"
+                    android:text="Meal Description" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:textColor="@color/primary_text_color"
+                    android:textSize="15sp"
+                    android:textStyle="italic"
+                    android:text="Describe meal in order to get consumed calories" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/directCalorieInput"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:adjustViewBounds="true"
+        android:layout_marginStart="@dimen/card_view_marginStartEnd"
+        android:layout_marginEnd="@dimen/card_view_marginStartEnd"
+        android:layout_weight="0.1"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/white"
+        app:cardCornerRadius="@dimen/card_view_corner_radius"
+        app:cardElevation="@dimen/card_view_elevation">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/card_view_content_padding">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:textColor="@color/primary_text_color"
+                    android:textSize="@dimen/label_text_size"
+                    android:textStyle="bold"
+                    android:text="Direct Calorie Input" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:textColor="@color/primary_text_color"
+                    android:textSize="15sp"
+                    android:textStyle="italic"
+                    android:text="Enter direct calorie values" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/dietCalorieInput"
+        android:layout_width="match_parent"
+        android:adjustViewBounds="true"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/card_view_marginStartEnd"
+        android:layout_marginEnd="@dimen/card_view_marginStartEnd"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="0.1"
+        android:background="@android:color/white"
+        app:cardCornerRadius="@dimen/card_view_corner_radius"
+        app:cardElevation="@dimen/card_view_elevation">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/card_view_content_padding">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:textColor="@color/primary_text_color"
+                    android:textSize="@dimen/label_text_size"
+                    android:textStyle="bold"
+                    android:text="From Created Diet" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:textColor="@color/primary_text_color"
+                    android:textSize="15sp"
+                    android:textStyle="italic"
+                    android:text="User created diets as calorie inputs" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:adjustViewBounds="true"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/card_view_marginStartEnd"
+        android:layout_marginEnd="@dimen/card_view_marginStartEnd"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="0.1"
+        android:background="@android:color/white"
+        app:cardCornerRadius="@dimen/card_view_corner_radius"
+        app:cardElevation="@dimen/card_view_elevation">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/card_view_content_padding">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:textColor="@color/primary_text_color"
+                    android:textSize="@dimen/label_text_size"
+                    android:textStyle="bold"
+                    android:text="From Created Diet" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:textColor="@color/primary_text_color"
+                    android:textSize="15sp"
+                    android:textStyle="italic"
+                    android:text="User created diets as calorie inputs" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</RelativeLayout>
