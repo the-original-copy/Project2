@@ -2,4 +2,19 @@
     <string name="app_name">DiabetesSystem</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="meal_categories">
+        <item>Breakfast</item>
+        <item>Lunch</item>
+        <item>Supper</item>
+        <item>Snack</item>
+    </string-array>
+    <string name="mealNamea">Banana</string>
+    <string name="mealNameb">Banana</string>
+    <string name="mealNamec">Banana</string>
+    <string name="mealCategorya">Breakfast</string>
+    <string name="mealCategoryb">Lunch</string>
+    <string name="mealCategoryc">Snack</string>
+    <string name="caloriesa">200</string>
+    <string name="caloriesb">200</string>
+    <string name="caloriesc">200</string>
 </resources>

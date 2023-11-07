@@ -1,0 +1,12 @@
+package com.smartherd.diabetessystem.activities
+
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import com.smartherd.diabetessystem.R
+
+class CalorieSurplusReport : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_calorie_surplus_report)
+    }
+}

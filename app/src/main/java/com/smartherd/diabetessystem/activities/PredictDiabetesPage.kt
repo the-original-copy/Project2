@@ -117,7 +117,7 @@ class PredictDiabetesPage : AppCompatActivity() {
         val actionBar = supportActionBar
         if(actionBar != null) {
             actionBar.setDisplayHomeAsUpEnabled(true)
-            actionBar.setHomeAsUpIndicator(R.drawable.ic_baseline_arrow_back_ios_24)
+            actionBar.setHomeAsUpIndicator(R.drawable.arrow_back_black)
         }
         toolbar_predict_diabetes.setNavigationOnClickListener {
             onBackPressed()

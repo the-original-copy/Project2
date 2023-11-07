@@ -24,7 +24,7 @@ class MealDescription : AppCompatActivity() {
     private fun setUpTabs(){
         val adapter = MealDescriptionPagerAdapter(supportFragmentManager)
         adapter.addFragment(InternetSearchFragment(),"Internet Search")
-        adapter.addFragment(MealDescriptionInputFragment(),"Meal Description")
+        adapter.addFragment(MealDescriptionInputFragment(),"Meal Input")
         binding!!.viewPager.adapter = adapter
         binding!!.tabs.setupWithViewPager(binding!!.viewPager)
         binding!!.tabs.getTabAt(0)!!.setIcon(R.drawable.ic_baseline_search_24)

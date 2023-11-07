@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginStart="@dimen/card_view_marginStartEnd"
+    android:layout_marginEnd="@dimen/card_view_marginStartEnd"
+    android:layout_marginBottom="10dp"
+    android:background="@android:color/white"
+    app:cardCornerRadius="@dimen/card_view_corner_radius"
+    app:cardElevation="@dimen/card_view_elevation">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+
+        android:padding="@dimen/card_view_content_padding">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:layout_marginEnd="15dp"
+            android:orientation="vertical">
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_meal_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:textColor="@color/primary_text_color"
+                android:textSize="@dimen/label_text_size"
+                android:textStyle="bold"
+                android:text="Tea with 2 slices of bread" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_meal_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:textColor="@color/primary_text_color"
+                android:textSize="@dimen/label_text_size"
+                android:textStyle="bold"
+                android:text="Tea with 2 slices of bread" />
+
+            <TextView
+                android:id="@+id/tv_meal_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:textColor="@color/primary_text_color"
+                android:textSize="@dimen/label_text_size"
+                android:textStyle="bold"
+                android:text="Tea with 2 slices of bread" />
+
+            <TextView
+                android:id="@+id/tv_meal_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:textColor="@color/secondary_text_color"
+                android:textSize="@dimen/value_text_size"
+                android:text="breakfast" />
+            <TextView
+                android:id="@+id/tv_meal_calories"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:textColor="@color/secondary_text_color"
+                android:textSize="@dimen/value_text_size"
+                android:text="500 calories" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

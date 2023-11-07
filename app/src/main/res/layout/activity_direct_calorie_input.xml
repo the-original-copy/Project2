@@ -4,12 +4,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.MealDescriptionInputFragment">
+    tools:context=".activities.DirectCalorieInput">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_direct_input"
+        android:layout_width="match_parent"
+        android:background="@color/teal_700"
+        android:layout_marginBottom="15dp"
+        android:layout_height="?attr/actionBarSize">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="Direct Calorie Input"
+            android:textColor="@color/white"
+            android:textSize="@dimen/toolbar_title_text_size"
+            android:textStyle="bold" />
+
+    </androidx.appcompat.widget.Toolbar>
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cv_enter_data"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar_direct_input"
         android:layout_marginStart="@dimen/authentication_screen_marginStartEnd"
         android:layout_marginTop="@dimen/authentication_screen_marginTop"
         android:layout_marginEnd="@dimen/authentication_screen_marginStartEnd"
@@ -46,29 +66,29 @@
                     android:textSize="@dimen/et_text_size" />
             </com.google.android.material.textfield.TextInputLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:padding="@dimen/card_view_layout_content_padding">
-            <TextView
-                android:id="@+id/meal_category_input"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center_vertical"
-                android:layout_weight="1"
-                android:text="Meal Category"
-                android:textColor="@color/black"
-                android:textSize="@dimen/toolbar_title_text_size"
-                android:textStyle="bold" />
-            <Spinner
-                android:id="@+id/meal_categories"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:entries="@array/meal_categories"
-                />
-        </LinearLayout>
+                android:orientation="horizontal"
+                android:padding="@dimen/card_view_layout_content_padding">
+                <TextView
+                    android:id="@+id/meal_category_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="Meal Category"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/toolbar_title_text_size"
+                    android:textStyle="bold" />
+                <Spinner
+                    android:id="@+id/meal_categories"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:entries="@array/meal_categories"
+                    />
+            </LinearLayout>
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btn_enter"
                 android:layout_width="match_parent"
@@ -86,4 +106,5 @@
                 android:textSize="@dimen/btn_text_size" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
+
 </RelativeLayout>

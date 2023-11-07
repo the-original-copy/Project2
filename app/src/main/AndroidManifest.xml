@@ -21,6 +21,21 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".activities.PredictionReport"
+            android:exported="false" />
+        <activity
+            android:name=".activities.CalorieConsumptionReport"
+            android:exported="false" />
+        <activity
+            android:name=".activities.CalorieSurplusReport"
+            android:exported="false" />
+        <activity
+            android:name=".activities.FromCreatedDiet"
+            android:exported="false" />
+        <activity
+            android:name=".activities.DirectCalorieInput"
+            android:exported="false" />
+        <activity
             android:name=".activities.MealDescription"
             android:exported="false" />
         <activity

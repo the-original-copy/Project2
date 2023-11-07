@@ -4,11 +4,17 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/drawable-v24/ic_baseline_arrow_back_ios_24.xml" value="0.1635" />
+        <entry key="app/src/main/res/drawable/arrow_back_black.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/circular_border.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/dialog_rounded.xml" value="0.1635" />
+        <entry key="app/src/main/res/drawable/ic_baseline_playlist_create_diet_24.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_baseline_use_as_diet_24.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ripple_effect_border.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/shape_button_rounded.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/activity_calories_consumed_input_page.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_calories_consumed_input_page.xml" value="0.17695473251028807" />
+        <entry key="app/src/main/res/layout/activity_create_diet.xml" value="0.19375" />
+        <entry key="app/src/main/res/layout/activity_direct_calorie_input.xml" value="0.19375" />
+        <entry key="app/src/main/res/layout/activity_from_created_diet.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_meal_description.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_pedometer.xml" value="0.18" />
@@ -16,12 +22,16 @@
         <entry key="app/src/main/res/layout/activity_predict_diabetes_page.xml" value="0.33" />
         <entry key="app/src/main/res/layout/dialog_diabetes_pedigree_function.xml" value="0.25" />
         <entry key="app/src/main/res/layout/dialog_pedometer_settings.xml" value="0.3875" />
-        <entry key="app/src/main/res/layout/fragment_calorie_counter.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/fragment_internet_search.xml" value="0.19375" />
-        <entry key="app/src/main/res/layout/fragment_meal_description_input.xml" value="0.19375" />
+        <entry key="app/src/main/res/layout/diet_list_item.xml" value="0.19270833333333334" />
+        <entry key="app/src/main/res/layout/diet_meal_list_item.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_calorie_counter.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/fragment_diet_meal_list.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_internet_search.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/fragment_meal_description_input.xml" value="0.2" />
         <entry key="app/src/main/res/layout/fragment_prediction.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/fragment_reports.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_settings.xml" value="0.19375" />
+        <entry key="app/src/main/res/layout/list_item.xml" value="0.19270833333333334" />
         <entry key="app/src/main/res/xml/network_security_config.xml" value="0.19270833333333334" />
       </map>
     </option>

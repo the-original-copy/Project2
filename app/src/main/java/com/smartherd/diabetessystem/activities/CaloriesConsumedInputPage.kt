@@ -22,6 +22,13 @@ class CaloriesConsumedInputPage : AppCompatActivity() {
         binding!!.mealDescription.setOnClickListener {
             startActivity(Intent(this,MealDescription::class.java))
         }
+        binding!!.directCalorieInput.setOnClickListener {
+            startActivity(Intent(this,DirectCalorieInput::class.java))
+        }
+        binding!!.dietCalorieInput.setOnClickListener {
+            startActivity(Intent(this,FromCreatedDiet::class.java))
+        }
+
     }
     private fun setUpActionBar() {
         setSupportActionBar(binding?.toolbarCalorieInput)
